@@ -42,7 +42,6 @@ header {
 
 .header-container {
     padding-top: 1rem;
-    display: flex;
     align-items: normal;
     justify-content: space-evenly;
     width: 100%;
