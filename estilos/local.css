@@ -1,0 +1,118 @@
+:root {
+    --verde-brasil: #009c3b;       
+    --amarelo-brasil: #ffdf00;    
+    --azul-brasil: #002776;       
+    --branco: #FFFFFF;
+    --texto-escuro: #222222;
+    --fundo-claro: #f4f9f2;   
+    --sombra-card: 0 4px 10px rgba(0, 0, 0, 0.15);
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--fundo-claro);
+    color: var(--texto-escuro);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--verde-brasil);
+    border-bottom: 4px solid var(--amarelo-brasil);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--branco);
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.divisor {
+    background-color: var(--azul-brasil);
+    height: 10px;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    background-color: var(--branco);
+}
+
+.container-destaque {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--branco);
+    padding: 25px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.caixa-titulo-card h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--azul-brasil);
+}
+
+.icone-clima-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tabela-info {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tabela-info td {
+    padding: 6px 12px;
+    font-size: 0.95rem;
+}
+
+.tabela-info td.rotulo {
+    font-weight: bold;
+    text-align: right;
+    width: 52%;
+    color: var(--azul-brasil);
+}
+
+footer {
+    background-color: var(--verde-brasil);
+    border-top: 4px solid var(--amarelo-brasil);
+    color: var(--branco);
+    width: 100%;
+    padding: 25px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.ultima-modificacao {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    color: var(--amarelo-brasil);
+}

@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+    .container-destaque {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-destaque img {
+        height: 550px;
+        width: 100%;
+    }
+
+    .card {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: none;
+        box-shadow: var(--sombra-card);
+        border-radius: 4px;
+        width: 320px;
+        padding: 0 0 20px 0;
+        overflow: hidden;
+    }
+
+    .card-dados {
+        top: 35px;
+        left: 40px;
+    }
+
+    .card-clima {
+        bottom: 35px;
+        right: 40px;
+    }
+
+    .caixa-titulo-card {
+        background-color: var(--azul-brasil);
+        padding: 12px;
+        margin-bottom: 20px;
+        
+    }
+
+    .caixa-titulo-card h2 {
+        color: var(--amarelo-brasil); 
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
+
+    .tabela-info {
+        max-width: 100%;
+    }
+
+    .tabela-info td {
+        font-size: 0.85rem;
+        padding: 4px 10px;
+    }
+
+    .tabela-info td.rotulo {
+        width: 45%;
+        color: var(--azul-brasil);
+    }
+
+    .icone-clima-mobile {
+        display: none;
+    }
+
+    .titulo-clima::after {
+        content: " ⛅";
+        font-size: 1.4rem;
+        vertical-align: middle;
+    }
+}
