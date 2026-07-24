@@ -84,23 +84,23 @@ document.querySelector('#pagina-inicial').addEventListener('click', () => {
     createTempleCard(templos);
 });
 
-document.querySelector('#antigos').addEventListener('click', () => {
-    toggleActive(document.querySelector('#antigos'));
+document.querySelector('#antigo').addEventListener('click', () => {
+    toggleActive(document.querySelector('#antigo'));
     createTempleCard(templos.filter(temple => new Date(temple.consagracao) < new Date('1950-01-01')));
 });
 
-document.querySelector('#novos').addEventListener('click', () => {
-    toggleActive(document.querySelector('#novos'));
+document.querySelector('#novo').addEventListener('click', () => {
+    toggleActive(document.querySelector('#novo'));
     createTempleCard(templos.filter(temple => new Date(temple.consagracao) >= new Date('1950-01-01')));
 });
 
-document.querySelector('#grandes').addEventListener('click', () => {
-    toggleActive(document.querySelector('#grandes'));
+document.querySelector('#grande').addEventListener('click', () => {
+    toggleActive(document.querySelector('#grande'));
     createTempleCard(templos.filter(temple => temple.area >= 90000));
 });
 
-document.querySelector('#pequenos').addEventListener('click', () => {
-    toggleActive(document.querySelector('#pequenos'));
+document.querySelector('#pequeno').addEventListener('click', () => {
+    toggleActive(document.querySelector('#pequeno'));
     createTempleCard(templos.filter(temple => temple.area < 10000));
 });
 
