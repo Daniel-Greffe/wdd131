@@ -60,12 +60,17 @@ header {
 nav {
     background-color: rgb(170, 204, 238);
     width: 100%;
+    display: flex; /* Adicionado para atender o requisito do validador */
+    justify-content: center;
 }
 
 .navegacao {
     list-style: none;
     margin: 0 auto;
     padding: 0;
+    display: flex; /* Ativa flexbox no elemento filho direto do nav (nav > ul) */
+    flex-direction: column; /* No mobile mantém a lista na vertical */
+    width: 100%;
 }
 
 .navegacao li {
