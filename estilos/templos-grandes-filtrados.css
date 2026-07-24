@@ -1,0 +1,43 @@
+@media only screen and (min-width: 40em) {
+
+    header {
+        padding-bottom: 1.5rem;
+    }
+
+    .container-cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .container-cabecalho-1,
+    .container-cabecalho-2 {
+        width: auto;
+    }
+
+    #botao-menu {
+        display: none;
+    }
+
+    .navegacao {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navegacao li {
+        display: block;
+    }
+
+    .navegacao a {
+        padding: 1rem 1.2rem;
+    }
+
+    .grade-templos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
