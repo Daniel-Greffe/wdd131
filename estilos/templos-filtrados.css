@@ -60,7 +60,7 @@ header {
 nav {
     background-color: rgb(170, 204, 238);
     width: 100%;
-    display: flex; /* Adicionado para atender o requisito do validador */
+    display: flex; 
     justify-content: center;
 }
 
@@ -68,8 +68,8 @@ nav {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    display: flex; /* Ativa flexbox no elemento filho direto do nav (nav > ul) */
-    flex-direction: column; /* No mobile mantém a lista na vertical */
+    display: flex; 
+    flex-direction: column; 
     width: 100%;
 }
 
